@@ -1,0 +1,21 @@
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+
+https://helm.sh/docs/intro/install/
+
+
+https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack
+
+Get Repo Info
+helm repo add Deep_prom https://prometheus-community.github.io/helm-charts
+helm repo update
+helm repo list
+
+Install Chart
+# Helm
+$ helm install [monitoring] Deep_prom/kube-prometheus-stack  (no special characters)
+helm list 
+
+
+helm is acting as generator to generate kubernetes yaml file.
